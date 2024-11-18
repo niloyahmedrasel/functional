@@ -1,0 +1,19 @@
+.backgroundImage{
+    background-image: url("../../assets/pexels-lumn-604969.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.button{
+    padding:10px 15px;
+    color:white;
+    background-color: crimson;
+    margin-top: 30px;
+    border:2px solid black;
+    border-radius:12px;
+}
+.button:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    transform:scale(1.2)
+}
