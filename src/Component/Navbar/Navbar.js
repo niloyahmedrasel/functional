@@ -26,7 +26,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li className='hover:text-mytheme-gold scale-75'><Link>Home</Link></li>
             <li className='hover:text-mytheme-gold scale-75'><Link>Reservation</Link></li>
-            <li className='hover:text-mytheme-gold scale-75'><Link>Menu</Link></li>
+            <Link to='/menu'><li className='hover:text-mytheme-gold scale-75'>Menu</li></Link>
             <li className='hover:text-mytheme-gold scale-75'><Link>Order</Link></li>
             <li className='hover:text-mytheme-gold scale-75'><Link>History</Link></li>
             </ul>
@@ -35,11 +35,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal text-mytheme-silver text-2xl px-1">
-            <li className='hover:text-mytheme-gold scale-75'><Link to='/'>Home</Link></li>
-            <li className='hover:text-mytheme-gold scale-75'><Link>Reservation</Link></li>
-            <li className='hover:text-mytheme-gold scale-75'><Link>Menu</Link></li>
-            <li className='hover:text-mytheme-gold scale-75'><Link>Order</Link></li>
-            <li className='hover:text-mytheme-gold scale-75'><Link>History</Link></li>
+            <Link to="/"><li className='hover:text-mytheme-gold scale-75 mt-2'>Home</li></Link>
+            <Link to="/reservation"><li className='hover:text-mytheme-gold scale-75 mt-2'>Reservation</li></Link>
+            <Link to='/menu'><li className='hover:text-mytheme-gold scale-75 mt-2'>Menu</li></Link>
+            <Link to="/order"><li className='hover:text-mytheme-gold scale-75 mt-2'>Order</li></Link>
+            <Link to="/history"><li className='hover:text-mytheme-gold scale-75 mt-2'>History</li></Link>
           </ul>
         </div>
         <div className="navbar-end">
